@@ -21,13 +21,13 @@ const Navbar: FC<Props> = ({ className }) => {
           </Link>
           <nav className="space-x-4 ml-6 hidden lg:block">
             <Link href="/">
-              <a className={s.link}>All</a>
+              <a className={s.link}>Home</a>
             </Link>
             <Link href="/search?q=clothes">
-              <a className={s.link}>Clothes</a>
+              <a className={s.link}>Roupas</a>
             </Link>
             <Link href="/search?q=accessories">
-              <a className={s.link}>Accessories</a>
+              <a className={s.link}>Acessórios</a>
             </Link>
           </nav>
         </div>
