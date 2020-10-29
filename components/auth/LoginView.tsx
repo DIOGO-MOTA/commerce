@@ -76,7 +76,7 @@ const LoginView: FC<Props> = () => {
           </div>
         )}
         <Input type="email" placeholder="Email" onChange={setEmail} />
-        <Input type="password" placeholder="Password" onChange={setPassword} />
+        <Input type="password" placeholder="Senha" onChange={setPassword} />
 
         <Button
           variant="slim"
@@ -84,16 +84,16 @@ const LoginView: FC<Props> = () => {
           loading={loading}
           disabled={disabled}
         >
-          Log In
+          Entrar
         </Button>
         <div className="pt-1 text-center text-sm">
-          <span className="text-accents-7">Don't have an account?</span>
+          <span className="text-accents-7">Não tem conta?</span>
           {` `}
           <a
             className="text-accent-9 font-bold hover:underline cursor-pointer"
             onClick={() => setModalView('SIGNUP_VIEW')}
           >
-            Sign Up
+            Inscrever-se
           </a>
         </div>
       </div>

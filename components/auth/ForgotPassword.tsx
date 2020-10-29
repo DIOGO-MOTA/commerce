@@ -56,12 +56,12 @@ const ForgotPassword: FC<Props> = () => {
             loading={loading}
             disabled={disabled}
           >
-            Recover Password
+            Recuperar Senha
           </Button>
         </div>
 
         <span className="pt-3 text-center text-sm">
-          <span className="text-accents-7">Do you have an account?</span>
+          <span className="text-accents-7">Você tem uma conta?</span>
           {` `}
           <a
             className="text-accent-9 font-bold hover:underline cursor-pointer"

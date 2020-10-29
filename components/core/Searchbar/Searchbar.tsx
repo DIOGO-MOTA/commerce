@@ -26,7 +26,7 @@ const Searchbar: FC<Props> = ({ className, id = 'search' }) => {
         <input
           id={id}
           className={s.input}
-          placeholder="Search for products..."
+          placeholder="Pesquisar produtos ..."
           defaultValue={router.query.q}
           onKeyUp={(e) => {
             e.preventDefault()

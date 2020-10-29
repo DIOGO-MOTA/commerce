@@ -24,11 +24,9 @@ const Navbar: FC<Props> = ({ className }) => {
               <a className={s.link}>Home</a>
             </Link>
             <Link href="/search?q=clothes">
-              <a className={s.link}>Roupas</a>
+              <a className={s.link}>Produtos</a>
             </Link>
-            <Link href="/search?q=accessories">
-              <a className={s.link}>Acessórios</a>
-            </Link>
+            
           </nav>
         </div>
 
