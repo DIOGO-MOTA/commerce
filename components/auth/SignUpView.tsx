@@ -103,7 +103,7 @@ const SignUpView: FC<Props> = () => {
             className="text-accent-9 font-bold hover:underline cursor-pointer"
             onClick={() => setModalView('LOGIN_VIEW')}
           >
-           Logon
+           Logar
           </a>
         </span>
       </div>
