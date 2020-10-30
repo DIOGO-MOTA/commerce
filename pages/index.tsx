@@ -6,7 +6,7 @@ import getSiteInfo from '@bigcommerce/storefront-data-hooks/api/operations/get-s
 import getAllPages from '@bigcommerce/storefront-data-hooks/api/operations/get-all-pages'
 import rangeMap from '@lib/range-map'
 import { Layout } from '@components/core'
-import { Grid, Marquee, Hero } from '@components/ui'
+import { Marquee } from '@components/ui'
 import { ProductCard } from '@components/product'
 import HomeAllProductsGrid from '@components/core/HomeAllProductsGrid'
 
@@ -27,7 +27,7 @@ export async function getStaticProps({
     preview,
   })
   const { products: newestProducts } = await getAllProducts({
-    variables: { field: 'newestProducts', first: 12 },
+    variables: { field: 'newestProducts', first: 20 },
     config,
     preview,
   })
@@ -76,7 +76,12 @@ export default function Home({
 
   return (
     <div>
-     
+      <HomeAllProductsGrid
+        categories={categories}
+        brands={brands}
+        newestProducts={newestProducts}
+      />
+
       <Marquee>
         {bestSelling.slice(0, 3).map(({ node }) => (
           <ProductCard
@@ -88,11 +93,6 @@ export default function Home({
           />
         ))}
       </Marquee>
-      <HomeAllProductsGrid
-        categories={categories}
-        brands={brands}
-        newestProducts={newestProducts}
-      />
     </div>
   )
 }
